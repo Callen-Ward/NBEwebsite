@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="/index.css">
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <script src="script.js" defer></script>
   <title>NBE</title>
@@ -14,28 +14,48 @@
 <body>
   <header>
     <div id="header_top">
-      <button id="hamburger" class="desktop_hidden">
-        <img src="/images/hamburger.png" />
-      </button>
-      <a href="/index.html">
-        <img src="/images/logo.png" />
-        <h1 id="logo_text_header" class="logo_text" class="mobile_hidden">Northbound Events</h1>
-      </a>
-      <div id="header_gap"></div>
-      <div id="search_wrapper">
-        <input type="text" id="search_bar">
-        <button id="search_button">
-          <img src="/images/search.png" id="search_icon" />
+      <div id="header_left">
+        <a href="/index.html" id="home_link">
+          <img src="/images/logo.png" />
+          <p id="logo_text_header" class="logo_text">Northbound Events</p>
+        </a>
+      </div>
+      <div id="header_right">
+        <a href="#">
+          <img src="/images/account.png">
+        </a>
+        <a href='#'>
+          <img src="/images/faq.png">
+        </a>
+        <div id="search_wrapper">
+          <input type="text" id="search_bar">
+          <button id="search_button">
+            <img src="/images/search.png" id="search_icon" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="header_top_mobile" class="desktop_hidden">
+      <div class="header_wrapper">
+        <button id="hamburger">
+          <img src="/images/hamburger.png" />
         </button>
       </div>
-      <a href='#' class="mobile_hidden">
-        <img src="/images/faq.png">
-      </a>
-      <a href="#" class="mobile_hidden">
-        <img src="/images/account.png">
-      </a>
+      <div class="header_wrapper">
+        <a href="/index.html" id="home_link_mobile">
+          <img src="/images/logo.png" />
+        </a>
+      </div>
+      <div class="header_wrapper">
+        <div id="search_wrapper_mobile">
+          <input type="text" id="search_bar_mobile">
+          <button id="search_button_mobile">
+            <img src="/images/search.png" id="search_icon_mobile" />
+          </button>
+        </div>
+      </div>
     </div>
-    <nav id="main_nav" class="mobile_hidden">
+    <nav id="main_nav">
       <a href="/browse/bands/1.html" class="hover_button">Live Bands</a>
       <a href="/browse/comedy/1.html" class="hover_button">Comedy Events</a>
       <a href="/browse/art/1.html" class="hover_button">Art Displays and exhibitions</a>
