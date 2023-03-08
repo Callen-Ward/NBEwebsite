@@ -35,7 +35,7 @@
 
   --hover-transition: all 0.4s;
 
-  --dislay-pane-shadow: 0.5px 0.5px 5px -3px black;
+  --display-pane-shadow: 0 0 5px -2px black;
 
   --footer-columns: 3;
 }
@@ -92,7 +92,7 @@ a {
   margin: var(--standard-margin);
   padding: 2vw;
   border-radius: var(--border-radius);
-  box-shadow: var(--dislay-pane-shadow);
+  box-shadow: var(--display-pane-shadow);
 }
 
 article {
@@ -253,7 +253,7 @@ header a {
 }
 
 .shadow {
-  box-shadow: var(--dislay-pane-shadow);
+  box-shadow: var(--display-pane-shadow);
 }
 
 .hover_button:hover {
