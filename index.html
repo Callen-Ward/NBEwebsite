@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="script.js" defer></script>
+  <title>NBE</title>
+</head>
+
+<body>
+  <header>
+    <div id="header_top">
+      <button id="hamburger" class="desktop_hidden">
+        <img src="/images/hamburger.png" />
+      </button>
+      <a href="/index.html">
+        <img src="/images/logo.png" />
+        <h1 id="logo_text_header" class="logo_text" class="mobile_hidden">Northbound Events</h1>
+      </a>
+      <div id="header_gap"></div>
+      <div id="search_wrapper">
+        <input type="text" id="search_bar">
+        <button id="search_button">
+          <img src="/images/search.png" id="search_icon" />
+        </button>
+      </div>
+      <a href='#' class="mobile_hidden">
+        <img src="/images/faq.png">
+      </a>
+      <a href="#" class="mobile_hidden">
+        <img src="/images/account.png">
+      </a>
+    </div>
+    <nav id="main_nav" class="mobile_hidden">
+      <a href="/browse/bands/1.html" class="hover_button">Live Bands</a>
+      <a href="/browse/comedy/1.html" class="hover_button">Comedy Events</a>
+      <a href="/browse/art/1.html" class="hover_button">Art Displays and exhibitions</a>
+    </nav>
+    <!-- TODO: make dropdown nav work -->
+    <nav id="sidebar_nav">
+      <ul>
+        <li><a href="#">Live Bands</a></li>
+        <li><a href="#">Comedy Events</a></li>
+        <li><a href="#">Art Displays and exhibitions</a></li>
+        <li><a href="#">Browse Events</a></li>
+        <li><a href="#">Our Venues</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="hero_container">
+      <img id="hero_img" src="/images/hero.png">
+    </div>
+    <div id="buttons" class="mobile_hidden">
+      <a href="browse/all/1.html" class="shadow hover_button">Browse Events<div>>></div></a>
+      <a href="#" class="shadow hover_button">Our Venues<div>>></div></a>
+    </div>
+    <div class="events_grid container">
+      <a class="event_listing" href="/listings/exlisting.html">
+        <img src="/images/thumbnail.png" />
+        <h3>Example Event</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel tortor leo. Duis justo quam, sodales et
+          dolor a, interdum interdum nulla. Maecenas quis ipsum non ex aliquet fermentum eget vel diam. Quisque aliquam
+          quam mollis lacus lacinia, nec vulputate mi viverra.</p>
+        <p>[date/time]</p>
+        <p>[location]</p>
+        <p>[prices]</p>
+      </a>
+      <a class="event_listing" href="/listings/exlisting.html">
+        <img src="/images/thumbnail.png" />
+        <h3>Example Event</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel tortor leo. Duis justo quam, sodales et
+          dolor a, interdum interdum nulla. Maecenas quis ipsum non ex aliquet fermentum eget vel diam. Quisque aliquam
+          quam mollis lacus lacinia, nec vulputate mi viverra.</p>
+        <p>[date/time]</p>
+        <p>[location]</p>
+        <p>[prices]</p>
+      </a>
+      <a class="event_listing" href="/listings/exlisting.html">
+        <img src="/images/thumbnail.png" />
+        <h3>Example Event</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel tortor leo. Duis justo quam, sodales et
+          dolor a, interdum interdum nulla. Maecenas quis ipsum non ex aliquet fermentum eget vel diam. Quisque aliquam
+          quam mollis lacus lacinia, nec vulputate mi viverra.</p>
+        <p>[date/time]</p>
+        <p>[location]</p>
+        <p>[prices]</p>
+      </a>
+      <a class="event_listing" href="/listings/exlisting.html">
+        <img src="/images/thumbnail.png" />
+        <h3>Example Event</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel tortor leo. Duis justo quam, sodales et
+          dolor a, interdum interdum nulla. Maecenas quis ipsum non ex aliquet fermentum eget vel diam. Quisque aliquam
+          quam mollis lacus lacinia, nec vulputate mi viverra.</p>
+        <p>[date/time]</p>
+        <p>[location]</p>
+        <p>[prices]</p>
+      </a>
+    </div>
+    <div class="container shadow">
+      <article>
+        <h2>What is Northbound Events?</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et tincidunt ante. Proin cursus ultricies mauris
+          at
+          scelerisque. Suspendisse potenti. Nam placerat accumsan fringilla. Sed dui felis, sollicitudin ac odio nec,
+          commodo rutrum augue. Aliquam interdum est leo, ac bibendum nisi congue ut. Nunc ac velit velit. Vivamus a leo
+          quam. Praesent magna mi, volutpat non libero at, dapibus ornare ipsum.</p>
+        <p>Vestibulum et risus vitae purus tempor tincidunt dictum ut lacus. Integer vulputate sed urna sed interdum.
+          Nulla id lacus laoreet, dignissim leo at, lobortis magna. Proin condimentum risus efficitur leo sagittis
+          pretium. Fusce quis interdum metus. Nullam id bibendum nibh. Duis lacinia sagittis aliquam. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit.</p>
+      </article>
+    </div>
+  </main>
+  <footer>
+    <nav>
+      <div>
+        <a href="/index.html" class="logo_text">Northbound Events</a>
+      </div>
+      <div>
+        <h3>Browse</h3>
+        <ul>
+          <li><a href="/browse/all/1.html">All Events</a></li>
+          <li><a href="/browse/bands/1.html">Live Bands</a></li>
+          <li><a href="/browse/comedy/1.html">Comedy Events</a></li>
+          <li><a href="/browse/art/1.html">Art Displays and Exhibitions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <ul>
+        <li><a href="/FAQ">Frequently Asked Questions</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li></ul>
+      </div>
+    </nav>
+    <hr>
+    <p>copyright</p>
+  </footer>
+</body>
+
+</html>

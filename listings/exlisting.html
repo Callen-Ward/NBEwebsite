@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/index.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div id="header_top">
+      <a href="/index.html">
+        <img src="/images/logo.png" />
+        <h1 id="logo_text" class="mobile_hidden">Northbound Events</h1>
+      </a>
+      <div id="header_gap"></div>
+      <div id="search_wrapper">
+        <input type="text" id="search_bar">
+        <button id="search_button">
+          <img src="/images/search.png" id="search_icon" />
+        </button>
+      </div>
+      <a href='#' class="mobile_hidden">
+        <img src="/images/faq.png">
+      </a>
+      <a href="#" class="mobile_hidden">
+        <img src="/images/account.png">
+      </a>
+    </div>
+    <nav id="main_nav" class="mobile_hidden">
+      <a href="#" class="hover_button">Live Bands</a>
+      <a href="#" class="hover_button">Comedy Events</a>
+      <a href="#" class="hover_button">Art Displays and exhibitions</a>
+    </nav>
+    <!-- TODO: make dropdown nav work -->
+    <nav id="dropdown_nav" class="desktop_hidden">
+      <ul>
+        <li><a href="#">Live Bands</a></li>
+        <li><a href="#">Comedy Events</a></li>
+        <li><a href="#">Art Displays and exhibitions</a></li>
+        <li><a href="#">Browse Events</a></li>
+        <li><a href="#">Our Venues</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Example Event</h1>
+    <div id="listing_container" class="shadow">
+      <div id="event_info">
+        <div id="info_container">
+          <img src="/images/thumbnail.png" />
+          <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dui eros, placerat a egestas eu, placerat
+              nec nibh. Suspendisse facilisis ex pharetra bibendum mollis. Curabitur imperdiet mattis felis sit amet
+              scelerisque. Duis sit amet orci mattis, fermentum sapien quis, vulputate turpis. Phasellus tincidunt augue
+              eget dictum rutrum. Quisque nulla sem, rhoncus at iaculis nec, elementum sit amet nisi. Etiam ullamcorper
+              elementum augue ac lacinia. Quisque egestas orci ac fringilla maximus. Nam vitae mi in nulla faucibus
+              accumsan eu semper neque. Integer eu vehicula massa. Donec lacinia risus vitae bibendum viverra.
+              Suspendisse potenti. Maecenas congue, lectus nec consectetur mattis, quam lectus condimentum justo, eget
+              luctus sem libero vel elit. Sed scelerisque eleifend augue ut ultrices. Vivamus velit est, tempor et
+              dictum vitae, tincidunt sit amet ex. Curabitur in metus eu quam consectetur congue.</p>
+            <p>
+              Nunc euismod eros enim, et mattis neque laoreet et. Suspendisse at turpis eros. Suspendisse diam quam,
+              tincidunt in facilisis at, ultrices et lorem. Suspendisse malesuada diam purus, sed molestie arcu
+              vulputate a. Praesent vestibulum diam vel ipsum semper, a venenatis metus volutpat. Etiam sed dui ac
+              sapien dapibus laoreet. Cras accumsan, sapien ac sodales commodo, enim ligula vehicula tellus, et molestie
+              felis lectus at ante. Nulla quis dignissim nunc. Class aptent taciti sociosqu ad litora torquent per
+              conubia nostra, per inceptos himenaeos. Nam tempus finibus ante, sed euismod ex. Quisque at nisl suscipit,
+              dictum nunc non, dapibus felis. Cras sit amet volutpat eros, et aliquet orci. Vivamus laoreet, nunc at
+              tincidunt aliquam, mi magna accumsan magna, id pellentesque risus diam sed mauris. Fusce molestie arcu mi,
+              id sagittis urna ornare nec.</p>
+
+            <p> Vestibulum in nibh ornare, laoreet lorem ac, ultricies magna. Nullam vitae vulputate arcu. Nunc et
+              maximus
+              nulla. Nullam ante risus, scelerisque a eros in, bibendum sodales urna. Donec ut urna placerat, fermentum
+              augue in, fermentum felis. Aliquam metus elit, lacinia ut lectus eget, semper varius justo. Proin vel
+              blandit arcu. Nunc tempus tempor ex, sit amet hendrerit mauris feugiat eget. Donec lobortis arcu ac ipsum
+              pharetra fermentum. Sed congue erat risus, vel laoreet elit finibus ut. Curabitur feugiat feugiat nisl nec
+              venenatis.</p>
+          </article>
+        </div>
+      </div>
+      <div id="booking" class="shadow">
+        <h2>Tickets</h2>
+        <table>
+          <tr>
+            <th>Ticket</th>
+            <th>Price</th>
+          </tr>
+          <tbody>
+            <tr>
+              <td>standard</td>
+              <td>[price]</td>
+            </tr>
+            <tr>
+              <td>good</td>
+              <td>[price]</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="#" id="ticket_button" class="hover_button">Get Tickets</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>[footer]</p>
+  </footer>
+</body>
+
+</html>
