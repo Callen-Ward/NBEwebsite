@@ -43,7 +43,7 @@
   --footer-columns: 3;
 }
 
-.desktop_hidden, #sidebar_nav {
+.desktop_hidden {
   display: none;
 }
 
@@ -236,6 +236,9 @@ header a {
   position: absolute;
   top: var(--header-top-height);
   padding: 1rem;
+  transition: all 0.2s;
+  opacity: 0;
+  display: none;
 }
 
 #sidebar_nav ul {
