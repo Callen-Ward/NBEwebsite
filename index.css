@@ -380,6 +380,10 @@ header a {
   margin: 0 auto;
 }
 
+#event_info p {
+  margin: 1rem 0;
+}
+
 #booking {
   flex: 1;
   border-radius: var(--large-border-radius);
@@ -389,10 +393,20 @@ header a {
   height: fit-content;
   position: sticky;
   top: calc(var(--header-top-height) + var(--header-nav-height) + 2rem);
+  padding: 1rem 2rem;
+  gap: 1rem;
 }
 
-#booking table {
+#booking_info {
+  margin: auto;
+}
+
+#ticket_table {
   margin: 0 auto 1rem;
+}
+
+#ticket_table td {
+  padding: 0.1rem;
 }
 
 #ticket_button {
@@ -401,7 +415,7 @@ header a {
   border: 1px solid var(--accent-colour);
   border-radius: var(--small-border-radius);
   padding: 1rem 1rem;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
 #ticket_button:hover {
