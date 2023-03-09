@@ -21,8 +21,6 @@
 
   --search_border: 2px solid black;
 
-  --min-footer-height: 1rem;
-
   --event-columns: 4;
   --gap: 2vw;
 
@@ -73,7 +71,7 @@ body {
 }
 
 main {
-  min-height: calc(100vh - var(--header-top-height) - var(--header-nav-height) - var(--min-footer-height) - 1rem);
+  min-height: calc(100vh - var(--header-top-height) - var(--header-nav-height) - 13.2rem);
 }
 
 h1 {
@@ -85,7 +83,11 @@ h1 {
 h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin: 1rem;
+  margin: 0 1rem 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
 }
 
 a {
@@ -95,7 +97,7 @@ a {
 
 .container {
   margin: var(--standard-margin);
-  padding: 2vw;
+  padding: 1rem 2vw;
   border-radius: var(--border-radius);
   box-shadow: var(--display-pane-shadow);
 }
@@ -298,6 +300,7 @@ header a {
   display: grid;
   grid-template-columns: repeat(var(--event-columns), 1fr);
   gap: var(--gap);
+  padding: 1rem;
 }
 
 .event_listing {
@@ -406,7 +409,6 @@ header a {
 footer {
   background-color: var(--accent-colour);
   color: var(--text-colour-alt);
-  min-height: var(--min-footer-height);
   margin: 0;
   position: relative;
   padding: var(--standard-margin);
