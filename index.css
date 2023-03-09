@@ -358,7 +358,6 @@ header a {
 
 #listing_container {
   display: flex;
-  margin: var(--standard-margin);
   border-radius: var(--large-border-radius);
 }
 
@@ -491,6 +490,15 @@ footer ul {
   #search_bar_mobile:focus {
     width: calc(100vw - calc(2 * 0.6 * var(--header-top-height)) - calc(4 * var(--header-gap)));
     transition: all 0.4s;
+  }
+
+  #listing_container {
+    flex-direction: column-reverse;
+  }
+
+  #booking {
+    position: static;
+    margin: 0;
   }
 }
 
