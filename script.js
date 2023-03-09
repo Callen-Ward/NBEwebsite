@@ -1,7 +1,7 @@
 const hamburger = document.getElementById('hamburger')
 const sidebar = document.getElementById('sidebar_nav')
-const search = document.getElementById('search_wrapper')
-const logo = document.getElementById('logo_text_header')
+const searchButton = document.getElementById('search_button')
+const searchButtonMobile = document.getElementById('search_button_mobile')
 
 hamburger.onclick = () => {
   if (sidebar.style.display === 'block') {
@@ -16,3 +16,10 @@ hamburger.onclick = () => {
     }, 1)
   }
 }
+
+function searchHandler() {
+  window.location.href = '/search.html'
+}
+
+searchButton.onclick = searchHandler
+searchButtonMobile.onclick = searchHandler
