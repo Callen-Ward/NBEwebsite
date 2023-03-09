@@ -79,11 +79,13 @@ main {
 h1 {
   text-align: center;
   font-size: 3rem;
+  margin: 1rem;
 }
 
 h2 {
   text-align: center;
   font-size: 2.5rem;
+  margin: 1rem;
 }
 
 a {
@@ -406,10 +408,10 @@ footer {
   color: var(--text-colour-alt);
   min-height: var(--min-footer-height);
   margin: 0;
+  position: relative;
 }
 
 footer nav {
-  margin: var(--standard-margin);
   display: grid;
   grid-template-columns: repeat(var(--footer-columns), 1fr);
   gap: 1rem;
@@ -469,5 +471,4 @@ footer ul {
     width: calc(100vw - calc(2 * 0.6 * var(--header-top-height)) - calc(4 * var(--header-gap)));
     transition: all 0.4s;
   }
-
 }

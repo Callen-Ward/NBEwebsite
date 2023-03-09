@@ -12,31 +12,53 @@
 <body>
   <header>
     <div id="header_top">
-      <a href="/index.html">
-        <img src="/images/logo.png" />
-        <h1 id="logo_text" class="mobile_hidden">Northbound Events</h1>
-      </a>
-      <div id="header_gap"></div>
-      <div id="search_wrapper">
-        <input type="text" id="search_bar">
-        <button id="search_button">
-          <img src="/images/search.png" id="search_icon" />
+      <div id="header_left">
+        <a href="/index.html" id="home_link">
+          <img src="/images/logo.png" />
+          <p id="logo_text_header" class="logo_text">Northbound Events</p>
+        </a>
+      </div>
+      <div id="header_right">
+        <a href="#">
+          <img src="/images/account.png">
+        </a>
+        <a href='#'>
+          <img src="/images/faq.png">
+        </a>
+        <div id="search_wrapper">
+          <input type="text" id="search_bar">
+          <button id="search_button">
+            <img src="/images/search.png" id="search_icon" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="header_top_mobile" class="desktop_hidden">
+      <div class="header_wrapper">
+        <button id="hamburger">
+          <img src="/images/hamburger.png" />
         </button>
       </div>
-      <a href='#' class="mobile_hidden">
-        <img src="/images/faq.png">
-      </a>
-      <a href="#" class="mobile_hidden">
-        <img src="/images/account.png">
-      </a>
+      <div class="header_wrapper">
+        <a href="/index.html" id="home_link_mobile">
+          <img src="/images/logo.png" />
+        </a>
+      </div>
+      <div class="header_wrapper">
+        <div id="search_wrapper_mobile">
+          <input type="text" id="search_bar_mobile">
+          <button id="search_button_mobile">
+            <img src="/images/search.png" id="search_icon_mobile" />
+          </button>
+        </div>
+      </div>
     </div>
-    <nav id="main_nav" class="mobile_hidden">
-      <a href="#" class="hover_button">Live Bands</a>
-      <a href="#" class="hover_button">Comedy Events</a>
-      <a href="#" class="hover_button">Art Displays and exhibitions</a>
+    <nav id="main_nav">
+      <a href="/browse/bands/1.html" class="hover_button">Live Bands</a>
+      <a href="/browse/comedy/1.html" class="hover_button">Comedy Events</a>
+      <a href="/browse/art/1.html" class="hover_button">Art Displays and exhibitions</a>
     </nav>
-    <!-- TODO: make dropdown nav work -->
-    <nav id="dropdown_nav" class="desktop_hidden">
+    <nav id="sidebar_nav">
       <ul>
         <li><a href="#">Live Bands</a></li>
         <li><a href="#">Comedy Events</a></li>
@@ -47,9 +69,9 @@
     </nav>
   </header>
   <main>
-    <h2>
+    <h1>
       All Events
-    </h2>
+    </h1>
     <div class="events_grid container">
       <a class="event_listing" href="/listings/exlisting.html">
         <img src="/images/thumbnail.png" />
@@ -132,9 +154,9 @@
       </a>
     </div>
     <div class="container" id="switcher">
-      <a class=grey><img src="/images/arrow.png" id="left_arrow"/></a>
+      <a class=grey><img src="/images/arrow.png" id="left_arrow" /></a>
       <p>page 1 of 2</p>
-      <a href="2.html"><img src="/images/arrow.png" id="right_arrow"/></a>
+      <a href="2.html"><img src="/images/arrow.png" id="right_arrow" /></a>
     </div>
   </main>
   <footer>
