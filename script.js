@@ -1,6 +1,7 @@
 const hamburger = document.getElementById('hamburger')
 const sidebar = document.getElementById('sidebar_nav')
 const search = document.getElementById('search_bar')
+const searchMobile = document.getElementById('search_bar_mobile')
 const searchButton = document.getElementById('search_button')
 const searchButtonMobile = document.getElementById('search_button_mobile')
 
@@ -22,11 +23,13 @@ function searchHandler() {
   window.location.href = '/search.html'
 }
 
-search.onkeydown = (e) => {
+function searchKeyHandler(e) {
   if (e.key === 'Enter') {
     searchHandler();
   }
 }
 
+search.onkeydown = searchKeyHandler
+searchMobile.onkeydown = searchHandler
 searchButton.onclick = searchHandler
 searchButtonMobile.onclick = searchHandler
