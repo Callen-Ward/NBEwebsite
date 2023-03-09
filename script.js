@@ -1,5 +1,6 @@
 const hamburger = document.getElementById('hamburger')
 const sidebar = document.getElementById('sidebar_nav')
+const search = document.getElementById('search_bar')
 const searchButton = document.getElementById('search_button')
 const searchButtonMobile = document.getElementById('search_button_mobile')
 
@@ -19,6 +20,12 @@ hamburger.onclick = () => {
 
 function searchHandler() {
   window.location.href = '/search.html'
+}
+
+search.onkeydown = (e) => {
+  if (e.key === 'Enter') {
+    searchHandler();
+  }
 }
 
 searchButton.onclick = searchHandler

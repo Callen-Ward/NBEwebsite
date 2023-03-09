@@ -95,6 +95,10 @@ a {
   text-decoration: none;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .container {
   margin: var(--standard-margin);
   padding: 1rem 2vw;
