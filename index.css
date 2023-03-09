@@ -409,6 +409,7 @@ footer {
   min-height: var(--min-footer-height);
   margin: 0;
   position: relative;
+  padding: var(--standard-margin);
 }
 
 footer nav {
