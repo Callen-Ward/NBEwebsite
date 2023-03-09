@@ -429,6 +429,7 @@ footer {
   margin: 0;
   position: relative;
   padding: var(--standard-margin);
+  font-size: 0.95rem;
 }
 
 footer nav {
